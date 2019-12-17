@@ -23,10 +23,20 @@ def draw_circle(circle):
     t.circle(circle.r)
     t.end_fill()
 
+def draw_square(x,y,size):
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+    for i in range(4): 
+        t.forward(size)
+        t.left(90)
+
 circles = [Circle(0,0,50,"blue"), Circle(60,50,20,"green"), Circle(-60,50,20,"red")]
 
 for circle in circles:
     draw_circle(circle)
+
+draw_square(-100,-100,30)
 
 t.update()
 
