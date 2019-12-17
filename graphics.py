@@ -31,6 +31,10 @@ t.penup()
 t.goto(-4 * size, 3 * size)
 t.pendown()
 
+x = 1
+y = 2
+prin
+
 for y in range(8):
     for x in range(8):
         t.color(colourDictionary[grid[y][x]])
